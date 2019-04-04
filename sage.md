@@ -20,14 +20,14 @@ commit을 관리해주는 시스템으로 언제든지 commit한 지점으로 �
 
 - git init : 현재 디렉토리에 git 저장소를 생성
 - git clone : 원격 저장소 로컬에 복제
-- git add : 스테이징 영역에 파일 올림
-- git commit : 스테이징 영역에 올라가 있는 파일 커밋.
+- git add : 스테이지 영역에 파일 올림
+- git commit : 스테이지 영역에 올라가 있는 파일 커밋.
 - git push : 원격 저장소로 보냄
 - git pull : fetch + merge
-- git status : 커밋되지 않은 변경사항을 조회
+- git status : 현재 깃 상태를 확인
 - git branch 브랜치명 : 브랜치 생성
 - git branch -d 브랜치명 : 브랜치 삭제
-- git checkout 브랜치명 : 해당 브랜치 및 그 브랜치의 work 디렉토리로 변경
-- git rebase 브랜치명 : 브랜치명의 변경사항을 현재 브랜치에 적용
-- git merge 브랜치명 : 브랜치를 합침
+- git checkout 브랜치명 : 해당 브랜치로 HEAD를 이동하고, HEAD의 내용을 워킹디렉토리(워킹트리)에 반영
+- (dev) git rebase master : 브랜치의 내용을 떼어내어 master 브랜치에 붙이는 것
+- (master) git merge dev : master 브랜치에서 dev 브랜치 커밋을 머지. 최종 결과는 master 브랜치가 되고, dev는 의미가 없어짐
 
